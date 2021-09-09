@@ -58,7 +58,7 @@ public class EmpleadoPlantaTemporaria extends Empleado {
 		sb.append(System.lineSeparator());
 		sb.append("Obra Social = $");
 		sb.append(System.lineSeparator());
-		sb.append(this.getSueldo().calcularRetencionesObraSocial());
+		sb.append(sueldoET.calcularRetencionesObraSocial());
 		sb.append(System.lineSeparator());
 		sb.append("Por edad = $");
 		sb.append(System.lineSeparator());
@@ -66,6 +66,7 @@ public class EmpleadoPlantaTemporaria extends Empleado {
 		sb.append(System.lineSeparator());
 		sb.append("Aportes jubilatorios = $");
 		sb.append(System.lineSeparator());
+		sb.append(sueldoET.calcularRetencionesJubilatorios());
 		sb.append("Por hora extra = $");
 		sb.append(System.lineSeparator());
 		sb.append(sueldoET.retencionPorHoraExtra(this.getHorasExtras()));

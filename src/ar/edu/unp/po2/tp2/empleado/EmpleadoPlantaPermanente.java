@@ -51,7 +51,7 @@ public class EmpleadoPlantaPermanente extends Empleado {
 		sb.append(System.lineSeparator());
 		sb.append("Antiguedad = $");
 		sb.append(System.lineSeparator());
-		sb.append(sueldoEP.calcularAsignacionXConyuge(this.tieneConyuge()));
+		sb.append(sueldoEP.calcularMontoPorAntiguedad(this.antiguedad));
 		sb.append(System.lineSeparator());
 		sb.append("Total = $");
 		sb.append(System.lineSeparator());
@@ -80,7 +80,7 @@ public class EmpleadoPlantaPermanente extends Empleado {
 		sb.append(System.lineSeparator());
 		sb.append("Total = $");
 		sb.append(System.lineSeparator());
-		sb.append(this.calcularSueldoBruto());
+		sb.append(this.calcularRetenciones());
 		
 		return sb.toString();
 	}

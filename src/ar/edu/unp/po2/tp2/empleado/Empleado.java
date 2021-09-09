@@ -25,7 +25,7 @@ public abstract class Empleado {
 	}
 	
 	public double calcularSueldoNeto() {
-		return this.calcularSueldoBruto() - this.calcularSueldoBruto();
+		return this.calcularSueldoBruto() - this.calcularRetenciones();
 	}
 	
 	public abstract double calcularSueldoBruto();
