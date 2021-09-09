@@ -2,11 +2,11 @@ package ar.edu.unp.po2.tp2.salarioFamiliar;
 
 public class SalarioFamiliar {
 	
-	private double cantidadAsignacionXHijo = 150l;
+	private double cantidadAsignacionXHijo = 150.0;
 	
-	private double cantidadSiTieneConyuge = 100l;
+	private double cantidadSiTieneConyuge = 100.0;
 	
-	private double montoPorAntiguedad = 50l;
+	private double montoPorAntiguedad = 50.0;
 
 	public double calcularMontoAsignacionPorHijo(int cantidadHijos) {
 		return this.cantidadAsignacionXHijo * cantidadHijos;
