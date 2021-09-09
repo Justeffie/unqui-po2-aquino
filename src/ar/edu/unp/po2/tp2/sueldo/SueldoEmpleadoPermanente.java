@@ -4,15 +4,11 @@ import ar.edu.unp.po2.tp2.salarioFamiliar.SalarioFamiliar;
 
 public class SueldoEmpleadoPermanente extends Sueldo {
 	
-	private SalarioFamiliar salarioFamiliar;
+	private SalarioFamiliar salarioFamiliar = new SalarioFamiliar();
 	
 	private double porcentajeRetencionJubilatorio = 0.15;
 	
 	private int porcentajeRetencionXHijo = 20;
-	
-	private int montoAsignacionXHijo = 150;
-	
-	private int montoAsignacionXConyuge = 100;
 
 	public SueldoEmpleadoPermanente(double montoBruto) {
 		super(montoBruto);
@@ -26,16 +22,16 @@ public class SueldoEmpleadoPermanente extends Sueldo {
 		return cantidadHijos * this.porcentajeRetencionXHijo;
 	}
 	
-	public double calcularMontoPorAntiguedad(int aniosAntiguedad) {
-		return 0;
+	public double calcularMontoPorAntiguedad(int antiguedad) {
+		return this.getSalarioFamiliar().calcularMontoPorAntiguedad(antiguedad);
 	}
 	
 	public double calcularMontoAsignacionXHijo(int hijos) {
-		return this.montoAsignacionXHijo * hijos;
+		return this.getSalarioFamiliar().calcularMontoAsignacionPorHijo(hijos);
 	}
 	
 	public double calcularAsignacionXConyuge(boolean tieneConyuge) {
-		return tieneConyuge ? this.montoAsignacionXConyuge : 0;
+		return this.getSalarioFamiliar().calcularMontoAsignacionPorConyuge(tieneConyuge);
 	}
 	
 	@Override
