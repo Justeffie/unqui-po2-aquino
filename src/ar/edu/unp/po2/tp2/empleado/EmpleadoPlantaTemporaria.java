@@ -17,9 +17,9 @@ public class EmpleadoPlantaTemporaria extends Empleado {
 	@Override
 	public double calcularRetenciones() {
 		SueldoEmpleadoTemporario sueldoBasicoET = (SueldoEmpleadoTemporario) this.getSueldo();
-		return sueldoBasicoET.calcularRetencionesObraSocial() +
+		return sueldoBasicoET.calcularRetencionesObraSocial(this.calcularSueldoBruto()) +
 				sueldoBasicoET.calcularRetencionXAnios(this.calcularEdad()) +
-				sueldoBasicoET.calcularRetencionesJubilatorios() +
+				sueldoBasicoET.calcularRetencionesJubilatorios(calcularSueldoBruto()) +
 				sueldoBasicoET.retencionPorHoraExtra(this.getHorasExtras());
 	}
 	
@@ -58,7 +58,7 @@ public class EmpleadoPlantaTemporaria extends Empleado {
 		sb.append(System.lineSeparator());
 		sb.append("Obra Social = $");
 		sb.append(System.lineSeparator());
-		sb.append(sueldoET.calcularRetencionesObraSocial());
+		sb.append(sueldoET.calcularRetencionesObraSocial(this.calcularSueldoBruto()));
 		sb.append(System.lineSeparator());
 		sb.append("Por edad = $");
 		sb.append(System.lineSeparator());
@@ -66,7 +66,7 @@ public class EmpleadoPlantaTemporaria extends Empleado {
 		sb.append(System.lineSeparator());
 		sb.append("Aportes jubilatorios = $");
 		sb.append(System.lineSeparator());
-		sb.append(sueldoET.calcularRetencionesJubilatorios());
+		sb.append(sueldoET.calcularRetencionesJubilatorios(this.calcularSueldoBruto()));
 		sb.append("Por hora extra = $");
 		sb.append(System.lineSeparator());
 		sb.append(sueldoET.retencionPorHoraExtra(this.getHorasExtras()));

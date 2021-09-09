@@ -10,11 +10,11 @@ public abstract class Sueldo {
 		this.setMontoBasico(montoBasico);
 	}
 	
-	public double calcularRetencionesObraSocial() {
-		return this.porcentajeRetencionSueldoBruto();
+	public double calcularRetencionesObraSocial(double montoBruto) {
+		return this.porcentajeRetencionSueldoBruto(montoBruto);
 	}
 	
-	public abstract double calcularRetencionesJubilatorios();
+	public abstract double calcularRetencionesJubilatorios(double sueldoBruto);
 
 	public double getMontoBasico() {
 		return montoBasico;
@@ -24,8 +24,8 @@ public abstract class Sueldo {
 		this.montoBasico = montoBasico;
 	}
 	
-	public double porcentajeRetencionSueldoBruto() {
-		return this.getMontoBasico() * this.porcentajeRetencion;
+	public double porcentajeRetencionSueldoBruto(double montoBruto) {
+		return montoBruto * this.porcentajeRetencion;
 	}
 
 }

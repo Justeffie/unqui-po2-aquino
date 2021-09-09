@@ -17,9 +17,9 @@ public class EmpleadoPlantaPermanente extends Empleado {
 	@Override
 	public double calcularRetenciones() {
 		SueldoEmpleadoPermanente sueldoEP = (SueldoEmpleadoPermanente) this.getSueldo();
-		return sueldoEP.calcularRetencionesObraSocial() + 
+		return sueldoEP.calcularRetencionesObraSocial(this.calcularSueldoBruto()) + 
 				sueldoEP.calcularRetencionesObraSocialPorHijo(this.getCantidadHijos()) + 
-				sueldoEP.calcularRetencionesJubilatorios();
+				sueldoEP.calcularRetencionesJubilatorios(this.calcularSueldoBruto());
 	}
 	
 	@Override
@@ -68,7 +68,7 @@ public class EmpleadoPlantaPermanente extends Empleado {
 		sb.append(System.lineSeparator());
 		sb.append("Obra Social = $");
 		sb.append(System.lineSeparator());
-		sb.append(sueldoEP.calcularRetencionesObraSocial());
+		sb.append(sueldoEP.calcularRetencionesObraSocial(this.calcularSueldoBruto()));
 		sb.append(System.lineSeparator());
 		sb.append("Por hijo = $");
 		sb.append(System.lineSeparator());
@@ -76,7 +76,7 @@ public class EmpleadoPlantaPermanente extends Empleado {
 		sb.append(System.lineSeparator());
 		sb.append("Aportes jubilatorios = $");
 		sb.append(System.lineSeparator());
-		sb.append(sueldoEP.calcularRetencionesJubilatorios());
+		sb.append(sueldoEP.calcularRetencionesJubilatorios(this.calcularSueldoBruto()));
 		sb.append(System.lineSeparator());
 		sb.append("Total = $");
 		sb.append(System.lineSeparator());

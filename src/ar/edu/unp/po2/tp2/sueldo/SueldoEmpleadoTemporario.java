@@ -22,18 +22,13 @@ public class SueldoEmpleadoTemporario extends Sueldo {
 		return this.montoXHoraExtra * horas;
 	}
 	
-	public double calcularRetencionesObraSocial() {
-		return this.calcularRetencionesObraSocial();
-				
-	}
-	
 	public double calcularRetencionXAnios(int edad) {
 		return edad > this.retencionAnios ? this.montoRetencionEdad : 0;
 	}
 
 	@Override
-	public double calcularRetencionesJubilatorios() {
-		return this.porcentajeRetencionSueldoBruto();
+	public double calcularRetencionesJubilatorios(double sueldoBruto) {
+		return this.porcentajeRetencionSueldoBruto(sueldoBruto);
 	}
 	
 	public double retencionPorHoraExtra(int horas) {

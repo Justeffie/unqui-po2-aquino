@@ -14,10 +14,6 @@ public class SueldoEmpleadoPermanente extends Sueldo {
 		super(montoBruto);
 	}
 	
-	public double calcularRetencionesObraSocial() {
-		return this.calcularRetencionesObraSocial();
-	}
-	
 	public double calcularRetencionesObraSocialPorHijo(int cantidadHijos) {
 		return cantidadHijos * this.porcentajeRetencionXHijo;
 	}
@@ -35,8 +31,8 @@ public class SueldoEmpleadoPermanente extends Sueldo {
 	}
 	
 	@Override
-	public double calcularRetencionesJubilatorios() {
-		return this.getMontoBasico() * this.porcentajeRetencionJubilatorio;
+	public double calcularRetencionesJubilatorios(double sueldoBruto) {
+		return sueldoBruto * this.porcentajeRetencionJubilatorio;
 	}
 
 	public SalarioFamiliar getSalarioFamiliar() {

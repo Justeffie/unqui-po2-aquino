@@ -13,7 +13,7 @@ public class Empresa {
 	
 	private String cuit;
 	
-	private ArrayList<Empleado> empleados;
+	private ArrayList<Empleado> empleados = new ArrayList<Empleado>();
 	
 	private ArrayList<ReciboDeHaberes> recibos = new ArrayList<ReciboDeHaberes>();
 	
@@ -50,8 +50,7 @@ public class Empresa {
 	}
 	
 	private ReciboDeHaberes createNewReciboDeHaberes(Empleado empleado) {
-		LocalDate fechaEmision = new java.sql.Date(new Date().getTime()).toLocalDate();
-		ReciboDeHaberes recibo = new ReciboDeHaberes(empleado, fechaEmision, empleado.getSueldo());
+		ReciboDeHaberes recibo = new ReciboDeHaberes(empleado, LocalDate.now(), empleado.getSueldo());
 		
 		return recibo;
 	}
@@ -82,5 +81,13 @@ public class Empresa {
 
 	public void setEmpleados(ArrayList<Empleado> empleados) {
 		this.empleados = empleados;
+	}
+
+	public ArrayList<ReciboDeHaberes> getRecibos() {
+		return recibos;
+	}
+
+	public void setRecibos(ArrayList<ReciboDeHaberes> recibos) {
+		this.recibos = recibos;
 	}
 }
