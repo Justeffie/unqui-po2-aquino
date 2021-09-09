@@ -17,8 +17,6 @@ public class Empresa {
 	
 	private ArrayList<ReciboDeHaberes> recibos = new ArrayList<ReciboDeHaberes>();
 	
-	public Empresa() {}
-	
 	public Empresa(String nombre, String cuit) {
 		this.setNombre(nombre);
 		this.setCuit(cuit);

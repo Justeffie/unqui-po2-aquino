@@ -86,7 +86,7 @@ public class EmpleadoPlantaPermanente extends Empleado {
 	}
 	
 	public boolean tieneConyuge() {
-		return this.getEstadoCivil() == "Casado";
+		return this.getEstadoCivil() == "Casadx";
 	}
 	
 	public int getCantidadHijos() {

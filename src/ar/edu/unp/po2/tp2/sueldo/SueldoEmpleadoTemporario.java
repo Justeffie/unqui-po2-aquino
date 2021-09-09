@@ -2,20 +2,16 @@ package ar.edu.unp.po2.tp2.sueldo;
 
 public class SueldoEmpleadoTemporario extends Sueldo {
 	
-	private double montoRetencionEdad = 25;
+	private double montoRetencionEdad = 25.0;
 	
-	private int retencionAnios = 50;
+	private double retencionAnios = 50.0;
 	
-	private int retencionXHora = 5;
+	private double retencionXHora = 5.0;
 	
-	private int montoXHoraExtra = 40;
+	private double montoXHoraExtra = 40.0;
 
-	public SueldoEmpleadoTemporario(double montoBruto) {
-		super(montoBruto);
-	}
-	
-	public double calcularAñosAporte() {
-		return 0;
+	public SueldoEmpleadoTemporario(double montoBasico) {
+		super(montoBasico);
 	}
 	
 	public double calcularMontoXHorasExtras(int horas) {
