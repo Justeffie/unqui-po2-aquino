@@ -2,6 +2,8 @@ package ar.edu.unq.po2.tp3.test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.util.ArrayList;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -41,6 +43,32 @@ class CounterTestCase {
 	public void testCantidadDeMultiplos() {
 		long cantidad = this.counter.cantidadDeMultiplosDeNumero(2);
 		assertEquals(4, cantidad);
+	}
+	
+	@Test
+	public void testDesarmandoNumeros() {
+		ArrayList<Long> numeros = new ArrayList<Long>();
+		numeros.add(567l);
+		numeros.add(8888l);
+		numeros.add(333l);
+		
+		assertEquals(8888l, this.counter.desarmandoNumeros(numeros));
+	}
+	
+	@Test
+	public void testDesarmandoNumeros2() {
+		ArrayList<Long> numeros = new ArrayList<Long>();
+		numeros.add(222l);
+		numeros.add(8888l);
+		numeros.add(22l);
+		numeros.add(222222l);
+		
+		assertEquals(222222l, this.counter.desarmandoNumeros(numeros));
+	}
+	
+	@Test 
+	public void testMultiploDe() {
+		assertEquals(999, this.counter.getMultiplosDe(3, 9));
 	}
 
 }
