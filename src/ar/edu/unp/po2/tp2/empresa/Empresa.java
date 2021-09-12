@@ -2,7 +2,6 @@ package ar.edu.unp.po2.tp2.empresa;
 	
 import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Date;
 
 import ar.edu.unp.po2.tp2.empleado.Empleado;
 import ar.edu.unp.po2.tp2.recibo.ReciboDeHaberes;
