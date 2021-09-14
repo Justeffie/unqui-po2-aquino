@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import ar.edu.unq.po2.tp3.Counter;
+import ar.edu.unq.po2.tp3.numeros.Counter;
 
 class CounterTestCase {
 	
