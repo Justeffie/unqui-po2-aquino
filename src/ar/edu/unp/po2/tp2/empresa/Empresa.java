@@ -2,6 +2,7 @@ package ar.edu.unp.po2.tp2.empresa;
 	
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.List;
 
 import ar.edu.unp.po2.tp2.empleado.Empleado;
 import ar.edu.unp.po2.tp2.recibo.ReciboDeHaberes;
@@ -12,9 +13,9 @@ public class Empresa {
 	
 	private String cuit;
 	
-	private ArrayList<Empleado> empleados = new ArrayList<Empleado>();
+	private List<Empleado> empleados = new ArrayList<Empleado>();
 	
-	private ArrayList<ReciboDeHaberes> recibos = new ArrayList<ReciboDeHaberes>();
+	private List<ReciboDeHaberes> recibos = new ArrayList<ReciboDeHaberes>();
 	
 	public Empresa(String nombre, String cuit) {
 		this.setNombre(nombre);
@@ -72,7 +73,7 @@ public class Empresa {
 		this.cuit = cuit;
 	}
 
-	public ArrayList<Empleado> getEmpleados() {
+	public List<Empleado> getEmpleados() {
 		return empleados;
 	}
 
@@ -80,7 +81,7 @@ public class Empresa {
 		this.empleados = empleados;
 	}
 
-	public ArrayList<ReciboDeHaberes> getRecibos() {
+	public List<ReciboDeHaberes> getRecibos() {
 		return recibos;
 	}
 

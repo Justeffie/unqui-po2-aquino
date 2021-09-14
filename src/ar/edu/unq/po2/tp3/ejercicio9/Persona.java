@@ -1,4 +1,4 @@
-package ar.edu.unq.po2.tp3.personas;
+package ar.edu.unq.po2.tp3.ejercicio9;
 
 import java.time.LocalDate;
 import java.time.Period;
