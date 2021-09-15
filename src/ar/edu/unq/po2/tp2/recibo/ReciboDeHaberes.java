@@ -1,9 +1,9 @@
-package ar.edu.unp.po2.tp2.recibo;
+package ar.edu.unq.po2.tp2.recibo;
 
 import java.time.LocalDate;
 
-import ar.edu.unp.po2.tp2.empleado.Empleado;
-import ar.edu.unp.po2.tp2.sueldo.Sueldo;
+import ar.edu.unq.po2.tp2.empleado.Empleado;
+import ar.edu.unq.po2.tp2.sueldo.Sueldo;
 
 public class ReciboDeHaberes {
 	

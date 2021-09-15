@@ -1,6 +1,6 @@
-package ar.edu.unp.po2.tp2.sueldo;
+package ar.edu.unq.po2.tp2.sueldo;
 
-import ar.edu.unp.po2.tp2.salarioFamiliar.SalarioFamiliar;
+import ar.edu.unq.po2.tp2.salarioFamiliar.SalarioFamiliar;
 
 public class SueldoEmpleadoPermanente extends Sueldo {
 	

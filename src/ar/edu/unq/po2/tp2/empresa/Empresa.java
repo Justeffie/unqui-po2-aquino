@@ -1,11 +1,11 @@
-package ar.edu.unp.po2.tp2.empresa; 
+package ar.edu.unq.po2.tp2.empresa; 
 	
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-import ar.edu.unp.po2.tp2.empleado.Empleado;
-import ar.edu.unp.po2.tp2.recibo.ReciboDeHaberes;
+import ar.edu.unq.po2.tp2.empleado.Empleado;
+import ar.edu.unq.po2.tp2.recibo.ReciboDeHaberes;
 
 public class Empresa {
 

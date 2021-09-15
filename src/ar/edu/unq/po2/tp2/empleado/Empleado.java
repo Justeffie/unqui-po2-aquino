@@ -1,9 +1,9 @@
-package ar.edu.unp.po2.tp2.empleado;
+package ar.edu.unq.po2.tp2.empleado;
 
 import java.time.LocalDate;
 import java.time.Period;
 
-import ar.edu.unp.po2.tp2.sueldo.Sueldo;
+import ar.edu.unq.po2.tp2.sueldo.Sueldo;
 
 public abstract class Empleado {
 	

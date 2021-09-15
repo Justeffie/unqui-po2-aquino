@@ -1,4 +1,4 @@
-package ar.edu.unp.po2.tp2.salarioFamiliar;
+package ar.edu.unq.po2.tp2.salarioFamiliar;
 
 public class SalarioFamiliar {
 	

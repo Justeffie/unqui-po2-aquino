@@ -1,4 +1,4 @@
-package ar.edu.unp.po2.tp2.sueldo;
+package ar.edu.unq.po2.tp2.sueldo;
 
 public class SueldoEmpleadoContratado extends Sueldo {
 	

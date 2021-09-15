@@ -7,13 +7,13 @@ import java.time.LocalDate;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import ar.edu.unp.po2.tp2.empleado.EmpleadoContratado;
-import ar.edu.unp.po2.tp2.empleado.EmpleadoPlantaPermanente;
-import ar.edu.unp.po2.tp2.empleado.EmpleadoPlantaTemporaria;
-import ar.edu.unp.po2.tp2.empresa.Empresa;
-import ar.edu.unp.po2.tp2.sueldo.SueldoEmpleadoContratado;
-import ar.edu.unp.po2.tp2.sueldo.SueldoEmpleadoPermanente;
-import ar.edu.unp.po2.tp2.sueldo.SueldoEmpleadoTemporario;
+import ar.edu.unq.po2.tp2.empleado.EmpleadoContratado;
+import ar.edu.unq.po2.tp2.empleado.EmpleadoPlantaPermanente;
+import ar.edu.unq.po2.tp2.empleado.EmpleadoPlantaTemporaria;
+import ar.edu.unq.po2.tp2.empresa.Empresa;
+import ar.edu.unq.po2.tp2.sueldo.SueldoEmpleadoContratado;
+import ar.edu.unq.po2.tp2.sueldo.SueldoEmpleadoPermanente;
+import ar.edu.unq.po2.tp2.sueldo.SueldoEmpleadoTemporario;
 
 class EmpresaTest {
 	

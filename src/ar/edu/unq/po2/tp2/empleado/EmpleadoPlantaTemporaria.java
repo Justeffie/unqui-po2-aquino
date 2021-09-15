@@ -1,8 +1,8 @@
-package ar.edu.unp.po2.tp2.empleado;
+package ar.edu.unq.po2.tp2.empleado;
 
 import java.time.LocalDate;
 
-import ar.edu.unp.po2.tp2.sueldo.SueldoEmpleadoTemporario;
+import ar.edu.unq.po2.tp2.sueldo.SueldoEmpleadoTemporario;
 
 public class EmpleadoPlantaTemporaria extends Empleado {
 	
