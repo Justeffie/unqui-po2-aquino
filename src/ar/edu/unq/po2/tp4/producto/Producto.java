@@ -1,4 +1,4 @@
-package ar.edu.unq.po2.tp4;
+package ar.edu.unq.po2.tp4.producto;
 
 public class Producto {
 	
@@ -19,6 +19,11 @@ public class Producto {
 		this.setEsPrecioCuidado(esPrecioCuidado);
 	}
 
+	public void aumentarPrecio(double aumento) {
+		this.setPrecio(this.precio + aumento);
+	}
+	
+	
 	public String getNombre() {
 		return nombre;
 	}
