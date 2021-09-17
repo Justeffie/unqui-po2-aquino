@@ -28,6 +28,11 @@ public class Trabajador {
 				.reduce(0.0, (subtotal, ingreso) -> subtotal + ingreso.getImpuestoAPagar(), Double::sum);
 	}
 	
+	
+	public void nuevoIngreso(Ingreso ingreso) {
+		this.ingresosAnuales.add(ingreso);
+	}
+	
 	public List<Ingreso> getIngresosAnuales() {
 		return ingresosAnuales;
 	}
