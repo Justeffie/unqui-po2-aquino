@@ -28,10 +28,6 @@ public abstract class Empleado {
 		return this.calcularSueldoBruto() - this.calcularRetenciones();
 	}
 	
-	public abstract double calcularSueldoBruto();
-	
-	public abstract double calcularRetenciones();
-	
 	public int calcularEdad() {
 		return Period.between(this.getFechaNacimiento(), LocalDate.now())
 				.getYears();
@@ -48,6 +44,10 @@ public abstract class Empleado {
 	public abstract String desgloceSueldoBruto();
 	
 	public abstract String desgloceRetenciones();
+	
+	public abstract double calcularSueldoBruto();
+	
+	public abstract double calcularRetenciones();
 
 	public String getNombre() {
 		return nombre;
