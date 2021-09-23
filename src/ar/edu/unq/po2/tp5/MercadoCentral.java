@@ -19,7 +19,7 @@ public class MercadoCentral {
 		stock.add(producto);
 	}
 	
-	public void eliminarProductoDelStock(Producto producto) {
+	public void eliminarProductoDelStock(Producto producto) throws ValidationException {
 		if (!stock.contains(producto)) {
 			throw new ValidationException("El producto no se encuentra en stock");
 		}

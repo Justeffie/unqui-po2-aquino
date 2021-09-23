@@ -1,6 +1,6 @@
 package ar.edu.unq.po2.tp5;
 
-public class ValidationException extends RuntimeException {
+public class ValidationException extends Exception {
 
 	/**
 	 * 

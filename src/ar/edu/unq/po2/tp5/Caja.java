@@ -15,7 +15,7 @@ public class Caja {
 		this.montoAPagar = this.montoAPagar + producto.getPrecio();
 	}
 	
-	public void eliminarDelStock(Producto producto) throws ValidationException {
+	public void eliminarDelStock(Producto producto) {
 		try {
 			this.getMercadoCentral().eliminarProductoDelStock(producto);
 		} catch (ValidationException e) {
