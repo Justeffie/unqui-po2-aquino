@@ -11,16 +11,16 @@ public class Caja {
 	}
 	
 	public void registrarProducto(Producto producto) {
-		this.eliminarDelStock(producto);
-		this.montoAPagar = this.montoAPagar + producto.getPrecio();
-	}
-	
-	public void eliminarDelStock(Producto producto) {
 		try {
-			this.getMercadoCentral().eliminarProductoDelStock(producto);
+			this.eliminarDelStock(producto);
+			this.montoAPagar = this.montoAPagar + producto.getPrecio();
 		} catch (ValidationException e) {
 			System.out.println(e);
 		}
+	}
+	
+	public void eliminarDelStock(Producto producto) throws ValidationException {
+		this.getMercadoCentral().eliminarProductoDelStock(producto);
 	}
 	
 	public double getMontoAPagar() {
