@@ -1,9 +1,15 @@
-package ar.edu.unq.po2.tp5;
+package ar.edu.unq.po2.tp5.test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import ar.edu.unq.po2.tp5.Caja;
+import ar.edu.unq.po2.tp5.MercadoCentral;
+import ar.edu.unq.po2.tp5.Producto;
+import ar.edu.unq.po2.tp5.ProductoCooperativas;
+import ar.edu.unq.po2.tp5.ProductoEmpresas;
 
 public class CajaTest {
 	
