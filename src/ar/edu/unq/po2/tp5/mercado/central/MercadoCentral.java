@@ -1,7 +1,10 @@
-package ar.edu.unq.po2.tp5;
+package ar.edu.unq.po2.tp5.mercado.central;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import ar.edu.unq.po2.tp5.exception.ValidationException;
+import ar.edu.unq.po2.tp5.producto.Producto;
 
 public class MercadoCentral {
 

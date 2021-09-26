@@ -1,4 +1,4 @@
-package ar.edu.unq.po2.tp5;
+package ar.edu.unq.po2.tp5.producto;
 
 public class ProductoCooperativas extends Producto {
 
@@ -10,5 +10,4 @@ public class ProductoCooperativas extends Producto {
 	public double getPrecio() {
 		return this.getPrecioBase() * 0.9;
 	}
-
 }
